@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GunShoot : MonoBehaviour
 {
-    public GameObject elByedrab;
+    public GameObject shotType;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,7 @@ public class GunShoot : MonoBehaviour
     public void GeneralShoot()
     {
         // a-call el IGunType.Shoot();
-        var obj = elByedrab.GetComponent<IGunType>();
+        var obj = shotType.GetComponent<IGunType>();
         if (obj != null)
         {
             obj.Shoot();

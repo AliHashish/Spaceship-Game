@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 2242119188211224932}
   - component: {fileID: 5433540886440504804}
   - component: {fileID: 293759125388047505}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ParticleShot
-  m_TagString: Projectile
+  m_TagString: FriendlyFire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

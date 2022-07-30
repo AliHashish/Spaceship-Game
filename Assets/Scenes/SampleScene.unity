@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbcde3980c2480a4d906675d6b6cdfa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elByedrab: {fileID: 428496383}
+  shotType: {fileID: 428496383}
 --- !u!1 &428496383
 GameObject:
   m_ObjectHideFlags: 0

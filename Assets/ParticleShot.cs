@@ -26,12 +26,12 @@ public class ParticleShot : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other) 
     {
         // 3ayez at2kd eny m5abatesh el player tho
-        if (!(other.gameObject.CompareTag("Player")))
-        {
+        // if (!(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("FriendlyFire")))  // msh m7tagha 5las 3lshan 8yrt el setting bta3t el layers
+        // {
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
             // bn-instantiate el hit effect, w bn3mlo store fy object, 3lshan n3mlo destroy b3deeha
             Destroy(effect, 0.41f);    // bn3ml destroy bs b3deeha b 5 seconds
             Destroy(gameObject);    // bn3ml destroy lel bullet
-        }
+        // }
     }
 }
