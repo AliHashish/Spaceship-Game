@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;           // 3lshan ast3ml el events
 
 public class Shooting : MonoBehaviour
 {
+    [Header("Custom Event")]            // 3lshan ast3ml el events
+    public UnityEvent customEvent;
+
 
     // public Transform firePoint;
-    public GameObject bulletPrefab;
+    // public GameObject bulletPrefab;
 
-    public float bulletForce = 1.25f;         // sor3et el bullet
+    // public float bulletForce = 1.25f;         // sor3et el bullet
+    // 1.25 for enemies, 2 for player
 
     // Start is called before the first frame update
     void Start()
@@ -21,21 +26,23 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Shoot();
+            customEvent.Invoke();       // To invoke the event(s)
+            // Shoot();
         }
     }
 
     // the function that handles the shooting logic
-    void Shoot()
-    {
-        GameObject bullet = Instantiate(bulletPrefab, this.GetComponent<Transform>().position, this.GetComponent<Transform>().rotation);
-        // bn3ml object mn el bulletPrefab el 7atenaha, fl position dh, bl rotation dyh
-        // w bn5azeno fy variable
+    // void Shoot()
+    // {
+
+    //     // GameObject bullet = Instantiate(bulletPrefab, this.GetComponent<Transform>().position, this.GetComponent<Transform>().rotation);
+    //     // // bn3ml object mn el bulletPrefab el 7atenaha, fl position dh, bl rotation dyh
+    //     // // w bn5azeno fy variable
         
-        // bs e7na 3ayzeen n-access el rigidbody bta3 el bullet, fa hnst3ml getcomponent
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();    // bn5azen el rigidbody
-        // hndeelo force b2a
-        rb.AddForce(this.GetComponent<Transform>().right * bulletForce, ForceMode2D.Impulse);
-        // ba7aded el direction w no3 el force
-    }
+    //     // // bs e7na 3ayzeen n-access el rigidbody bta3 el bullet, fa hnst3ml getcomponent
+    //     // Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();    // bn5azen el rigidbody
+    //     // // hndeelo force b2a
+    //     // rb.AddForce(this.GetComponent<Transform>().right * bulletForce, ForceMode2D.Impulse);
+    //     // // ba7aded el direction w no3 el force
+    // }
 }

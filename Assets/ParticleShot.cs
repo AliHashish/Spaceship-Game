@@ -23,7 +23,7 @@ public class ParticleShot : MonoBehaviour
     {
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         // bn-instantiate el hit effect, w bn3mlo store fy object, 3lshan n3mlo destroy b3deeha
-        Destroy(effect, 0.5f);    // bn3ml destroy bs b3deeha b 5 seconds
+        Destroy(effect, 0.41f);    // bn3ml destroy bs b3deeha b 5 seconds
         Destroy(gameObject);    // bn3ml destroy lel bullet
         
     }
