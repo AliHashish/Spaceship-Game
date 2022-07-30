@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParticleShootingLogic : MonoBehaviour
+public class ParticleShootingLogic : MonoBehaviour, IGunType
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
