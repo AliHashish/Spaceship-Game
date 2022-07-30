@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);  // yt7rk b constant speed
 
         Vector2 lookDir = mousePos - rb.position;       // el far2 ma bein el mouse wl player howa el vector mn el player lel mouse
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;                                   
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg + 90f;                                   
         // btgeeb el angle el m7tagenha bs bl radians, fa bn7wlha le degrees
 
         rb.rotation = angle;    // b7otaha lel player b2a
