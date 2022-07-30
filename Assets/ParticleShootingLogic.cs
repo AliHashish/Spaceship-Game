@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ParticleShootingLogic : MonoBehaviour, IGunType
 {
-    public Transform firePoint;
+    // public Transform firePoint;
     public GameObject bulletPrefab;
 
     public float bulletForce = 1.25f;         // sor3et el bullet
@@ -24,6 +24,8 @@ public class ParticleShootingLogic : MonoBehaviour, IGunType
 
     public void Shoot()
     {
+        // Debug.Log(this.GetComponent<Transform>().position);
+        // Debug.Log(firePoint.position);
         GameObject bullet = Instantiate(bulletPrefab, this.GetComponent<Transform>().position, this.GetComponent<Transform>().rotation);
         // bn3ml object mn el bulletPrefab el 7atenaha, fl position dh, bl rotation dyh
         // w bn5azeno fy variable
