@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;        // Default value a2dr a8yrha mn bara 3ady (mn unity)
+    public float moveSpeed = 1.5f;        // Default value a2dr a8yrha mn bara 3ady (mn unity)
 
     public Rigidbody2D rb;              // byshawer 3l rigidbody bta3 el player, l2n dh el hyt7rk m3 el player
     public Camera cam;                  // object mn el camera, 3lshan n3rf el mouse fein
