@@ -6,6 +6,7 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
 {
     // public Transform firePoint;
     public LineRenderer laserLine;
+    public GameObject onImpactEffect;
     public float laserWidth = 0.06f;
     public float laserMaxRange = 5f;
 
@@ -49,11 +50,14 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
                 laserLine.SetPosition(1, hitObjectInfo.point);          // b5ly el ending point hya el 7aga elly et5abatet
                 
                 // hena e3ml el particle effect wl damage
+                GameObject effect = Instantiate(onImpactEffect, hitObjectInfo.point, Quaternion.identity);
+                Destroy(effect, 0.41f);    // bn3ml destroy bs b3deeha b 0.41 seconds
             }
             else
             {
                 Debug.Log("3ada el max");
                 laserLine.SetPosition(1, this.GetComponent<Transform>().position + this.GetComponent<Transform>().right * laserMaxRange);          // b5ly el ending point hya el max range
+                // Instantiate(onImpactEffect, this.GetComponent<Transform>().position + this.GetComponent<Transform>().right * laserMaxRange, Quaternion.identity);
             }
             
             // Vector3 zeroVec = new Vector3(0f,0f,0f);
@@ -67,6 +71,7 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
         {
             laserLine.SetPosition(0, this.GetComponent<Transform>().position);              // b5ly el starting point hya el this.GetComponent<Transform>()
             laserLine.SetPosition(1, this.GetComponent<Transform>().position + this.GetComponent<Transform>().right * laserMaxRange);          // b5ly el ending point hya el max range
+            // Instantiate(onImpactEffect, this.GetComponent<Transform>().position + this.GetComponent<Transform>().right * laserMaxRange, Quaternion.identity);
         }
         laserLine.enabled = true;        // kda el laser visible
         // yield return new WaitForSeconds(1f);
