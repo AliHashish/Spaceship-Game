@@ -28,10 +28,10 @@ public class GunShoot : MonoBehaviour
         // Debug.Log(shotType.GetComponent<LineRenderer>());
         if (shotType.GetComponent<LineRenderer>() != null)
         {
-            yield return new WaitForSeconds(0.3f);      // waits for a while before continuing
+            yield return new WaitForSeconds(0.1f);      // waits for a while before continuing
                                                         // 3lshan nel7a2 nshoof el laser
             // Debug.Log("Noice");
-            // shotType.GetComponent<LineRenderer>().enabled = false;       // kda el laser invisible
+            shotType.GetComponent<LineRenderer>().enabled = false;       // kda el laser invisible
         }
     }
 

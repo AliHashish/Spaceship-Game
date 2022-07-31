@@ -266,7 +266,7 @@ LineRenderer:
     textureMode: 0
     shadowBias: 0.5
     generateLightingData: 0
-  m_UseWorldSpace: 0
+  m_UseWorldSpace: 1
   m_Loop: 0
 --- !u!1 &230636156
 GameObject:
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbcde3980c2480a4d906675d6b6cdfa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotType: {fileID: 428496383}
+  shotType: {fileID: 101511121}
 --- !u!1 &428496383
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,6 +448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2242119188211224933, guid: 46043176a9163274e8c5a02a67e22bae, type: 3}
   bulletForce: 2
+  NumBullets: 1
 --- !u!1 &492611409
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,7 +844,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5345005, y: 1}
+    m_SensorSize: {x: 1.3460351, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
