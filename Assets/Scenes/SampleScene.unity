@@ -227,9 +227,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserLine: {fileID: 101511124}
-  onImpactEffect: {fileID: 100002, guid: 565cdc2ed7b030a41accd8f00ae59a50, type: 3}
+  onImpactEffect: {fileID: 100002, guid: 2f6b8f55111872a4f98f7c00370200f6, type: 3}
   laserWidth: 0.06
-  laserMaxRange: 3.5
+  laserMaxRange: 2
 --- !u!120 &101511124
 LineRenderer:
   m_ObjectHideFlags: 0
