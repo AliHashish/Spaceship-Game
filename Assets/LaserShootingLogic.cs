@@ -7,8 +7,9 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
     // public Transform firePoint;
     public LineRenderer laserLine;
     public float laserWidth = 0.06f;
-    public float lineMaxRange = 5f;
+    public float laserMaxRange = 5f;
 
+    float distance;     // el msafa ma bein el player wl object elly et5abat
     // Start is called before the first frame update
     void Start()
     {
@@ -30,18 +31,30 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
         // waitingTime = 1f;
         RaycastHit2D hitObjectInfo = Physics2D.Raycast(this.GetComponent<Transform>().position, this.GetComponent<Transform>().right);
         // 8albn m3naha lw el laser kamel fl etgah bta3o, hye5bat fy eih aw kda
-        if (hitObjectInfo)
+        if (hitObjectInfo)          // 5abat 7aga
         {
             // Debug.Log(hitObjectInfo.transform.name);
-            // Debug.Log(hitObjectInfo.transform.position);
-            // Debug.Log(this.GetComponent<Transform>().position);
+            Debug.Log(hitObjectInfo.transform.position);
+            Debug.Log(this.GetComponent<Transform>().position);
+            distance = Distance(hitObjectInfo);     
+            Debug.Log(Distance(hitObjectInfo));
+
             // Debug.Log(firePoint.position);
             // h7sb b2a el distance ma bein el firePoint.position wl object elly et5abat
             // w lw hya as8r mn el max distance bta3t el laser, h5leeh ya5od damage wl kalam dh
             // lw la, msh hya5od damage. wl effect bta3t el laser hye5talef
             laserLine.SetPosition(0, this.GetComponent<Transform>().position);              // b5ly el starting point hya el this.GetComponent<Transform>()
-            laserLine.SetPosition(1, hitObjectInfo.point);          // b5ly el ending point hya el 7aga elly et5abatet
-            
+            if (distance <= laserMaxRange)  // yb2a ersem 3ady mn el player lel object
+            {
+                laserLine.SetPosition(1, hitObjectInfo.point);          // b5ly el ending point hya el 7aga elly et5abatet
+                
+                // hena e3ml el particle effect wl damage
+            }
+            else
+            {
+                Debug.Log("3ada el max");
+                laserLine.SetPosition(1, this.GetComponent<Transform>().position + this.GetComponent<Transform>().right * laserMaxRange);          // b5ly el ending point hya el max range
+            }
             
             // Vector3 zeroVec = new Vector3(0f,0f,0f);
             // laserLine.SetPosition(0, zeroVec);              // b5ly el starting point hya el this.GetComponent<Transform>()
@@ -53,7 +66,7 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
         else        // m5abatsh 7aga
         {
             laserLine.SetPosition(0, this.GetComponent<Transform>().position);              // b5ly el starting point hya el this.GetComponent<Transform>()
-            laserLine.SetPosition(1, this.GetComponent<Transform>().position + this.GetComponent<Transform>().right * 5);          // b5ly el ending point hya el max range
+            laserLine.SetPosition(1, this.GetComponent<Transform>().position + this.GetComponent<Transform>().right * laserMaxRange);          // b5ly el ending point hya el max range
         }
         laserLine.enabled = true;        // kda el laser visible
         // yield return new WaitForSeconds(1f);
@@ -73,7 +86,11 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
 
     }
 
-
+    float Distance(RaycastHit2D hitObjectInfo)
+    {
+        // This line might seem scary, but I promise, it simply calculates the distance between 2 points :D
+        return Mathf.Sqrt((hitObjectInfo.transform.position.x - this.GetComponent<Transform>().position.x)*(hitObjectInfo.transform.position.x - this.GetComponent<Transform>().position.x) + (hitObjectInfo.transform.position.y - this.GetComponent<Transform>().position.y)*(hitObjectInfo.transform.position.y - this.GetComponent<Transform>().position.y));
+    }
     // IEnumerator la7za()
     // {
     //     yield return new WaitForSeconds(waitingTime);
