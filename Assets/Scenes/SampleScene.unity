@@ -459,7 +459,8 @@ GameObject:
   m_Component:
   - component: {fileID: 492611411}
   - component: {fileID: 492611410}
-  m_Layer: 6
+  - component: {fileID: 492611412}
+  m_Layer: 9
   m_Name: Brown Dwarf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,6 +534,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &492611412
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492611409}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 10.013685
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,7 +861,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3460351, y: 1}
+    m_SensorSize: {x: 2.2914522, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

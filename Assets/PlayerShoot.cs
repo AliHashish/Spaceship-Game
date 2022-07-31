@@ -9,6 +9,7 @@ public class PlayerShoot : MonoBehaviour
     public UnityEvent customEvent;
 
     public float attackRate = 2f;       // y2dr y3ml kam attack fl sanya
+    // 2 for particle, 100 for laser
     float nextAttackTime = 0f;
 
     // Start is called before the first frame update
@@ -22,7 +23,7 @@ public class PlayerShoot : MonoBehaviour
     {
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButton("Fire1"))
             {
                 // void Shoot();
                 customEvent.Invoke();       // To invoke the event(s)
