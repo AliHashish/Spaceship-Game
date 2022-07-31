@@ -6,7 +6,8 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
 {
     // public Transform firePoint;
     public LineRenderer laserLine;
-    // float waitingTime = 0f;
+    public float laserWidth = 0.06f;
+    public float lineMaxRange = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,8 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
 
     public void Shoot()
     {
+        laserLine.startWidth = laserWidth;
+        laserLine.endWidth = laserWidth;
         // waitingTime = 1f;
         RaycastHit2D hitObjectInfo = Physics2D.Raycast(this.GetComponent<Transform>().position, this.GetComponent<Transform>().right);
         // 8albn m3naha lw el laser kamel fl etgah bta3o, hye5bat fy eih aw kda
@@ -46,6 +49,11 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
             // zeroVec = this.GetComponent<Transform>().position;
             // posVec.x = zeroVec.x;
             // posVec.y = zeroVec.y;
+        }
+        else        // m5abatsh 7aga
+        {
+            laserLine.SetPosition(0, this.GetComponent<Transform>().position);              // b5ly el starting point hya el this.GetComponent<Transform>()
+            laserLine.SetPosition(1, this.GetComponent<Transform>().position + this.GetComponent<Transform>().right * 5);          // b5ly el ending point hya el max range
         }
         laserLine.enabled = true;        // kda el laser visible
         // yield return new WaitForSeconds(1f);
