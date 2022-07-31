@@ -34,9 +34,10 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
         // 8albn m3naha lw el laser kamel fl etgah bta3o, hye5bat fy eih aw kda
         if (hitObjectInfo)          // 5abat 7aga
         {
-            // Debug.Log(hitObjectInfo.transform.name);
+            Debug.Log(hitObjectInfo.transform.name);
             Debug.Log(hitObjectInfo.transform.position);
             Debug.Log(this.GetComponent<Transform>().position);
+            
             distance = Distance(hitObjectInfo);     
             Debug.Log(Distance(hitObjectInfo));
 
