@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Projectile
   - FriendlyFire
+  - TempShield
+  - TempAttackRate
   layers:
   - Default
   - TransparentFX
@@ -17,9 +19,9 @@ TagManager:
   - Player
   - Enemy
   - Objects
-  - Bullets
-  - 
-  - 
+  - FriendlyBullets
+  - PickableItems
+  - EnemyBullets
   - 
   - 
   - 

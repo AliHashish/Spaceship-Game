@@ -9,6 +9,7 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
     public GameObject onImpactEffect;
     public float laserWidth = 0.06f;
     public float laserMaxRange = 5f;
+    public float damage = 0.1f;        // 5ly balk eno byedrab 100 mara fl sanya, fa kda damage = 100 * 0.1 = 10 fl sanya
 
     float distance;     // el msafa ma bein el player wl object elly et5abat
     // Start is called before the first frame update

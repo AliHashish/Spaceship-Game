@@ -10,6 +10,9 @@ public class ParticleShootingLogic : MonoBehaviour, IGunType
     public float bulletForce = 1.25f;         // sor3et el bullet
     // 1.25 for enemies, 2 for player
     
+    public float damage = 5f;
+
+
     public int numBullets = 2;                // htedrab kam bullet fl mara
     Vector3 disposition = new Vector3(0f,0.3f,0f);
     // momkn a3mlha for loop ez gowa el Shoot(), kol mara y-spawn wa7da fy makan shifted 3n el ableeha b value mo3yna / 3adadhom
