@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpBulletSpeedLaserMaxRange : MonoBehaviour
+public class PickUpBulletSpeedLaserMaxRange : MonoBehaviour, IPickUpItem
 {
+    public ParticleShootingLogic particleVars;         // To access some variables
+    public LaserShootingLogic laserVars;               // To access some variables
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +18,12 @@ public class PickUpBulletSpeedLaserMaxRange : MonoBehaviour
     {
         
     }
+
+    public void PickUp()
+    {
+        Destroy(gameObject);
+        laserVars.laserMaxRange *= 1.1f;   // adds 10% of current damage
+        particleVars.bulletForce *= 1.1f;   // adds 10% of current damage
+    }
+
 }
