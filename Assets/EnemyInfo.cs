@@ -8,15 +8,20 @@ public class EnemyInfo : MonoBehaviour
     public float maxHealth = 150f;     // initially, max health = 150
     public ParticleShootingLogic playerVars;         // To access some variables
 
+    SpriteRenderer rend;
+    Color C;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rend = GetComponent<SpriteRenderer> ();
+        C = rend.material.color;
     }
 
     // Update is called once per frame
     void Update()
     {
+        C.b = C.g = health / maxHealth;     // lono bye2leb a7mar kol ma yetdereb aktr
+        rend.material.color = C;
         if (health <= 0)
         {
             Destroy(gameObject);

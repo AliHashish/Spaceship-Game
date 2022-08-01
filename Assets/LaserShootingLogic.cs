@@ -61,7 +61,7 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
                 Destroy(effect, 0.41f);    // bn3ml destroy bs b3deeha b 0.41 seconds
                 if (hitObjectInfo.transform.CompareTag("Enemy"))   // 5abat enemy, fa e3mlo damage
                 {
-                    Debug.Log("bat7ere2 ya naaaaas");
+                    // Debug.Log("bat7ere2 ya naaaaas");
                     hitObjectInfo.transform.GetComponent<EnemyInfo>().health -= damage;
                 }
             }
