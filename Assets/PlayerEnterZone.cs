@@ -26,7 +26,7 @@ public class PlayerEnterZone : MonoBehaviour
         var zone = enteredZone.GetComponent<IZone>();
         if(zone != null)  // lw la2a item y2dr yt3mlha pickup
         {
-            zone.ZoneEffect();
+            zone.ZoneEffect(true);
             
         }
     }

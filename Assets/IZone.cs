@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IZone
 {
-    void ZoneEffect();
+    void ZoneEffect(bool player, GameObject enemy = null);
     
     
     

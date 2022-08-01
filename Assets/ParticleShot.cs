@@ -30,11 +30,12 @@ public class ParticleShot : MonoBehaviour
         // {
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         // Debug.Log("Garab kda");
-        if(other.gameObject.CompareTag("Enemy"))       // lw 5abat el player, hna2as el health bta3o
-        {
-            // hena hadrab el enemy bl damage
-            // playerVars.health -= particleVars.damage;
-        }
+        // if(other.gameObject.CompareTag("Enemy"))       // lw 5abat el player, hna2as el health bta3o
+        // {
+        //     // n2lt el kalam dh 7eta tanya
+        //     // hena hadrab el enemy bl damage
+        //     // playerVars.health -= particleVars.damage;
+        // }
         // bn-instantiate el hit effect, w bn3mlo store fy object, 3lshan n3mlo destroy b3deeha
         Destroy(effect, 0.41f);    // bn3ml destroy bs b3deeha b 0.41 seconds
         Destroy(gameObject);    // bn3ml destroy lel bullet

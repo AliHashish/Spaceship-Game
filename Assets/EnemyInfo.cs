@@ -37,4 +37,18 @@ public class EnemyInfo : MonoBehaviour
         }
 
     }
+
+    private void OnTriggerStay2D(Collider2D enteredZone)
+    {
+        // i++;
+        // Debug.Log($"da5al gowaya {i}");
+
+        var zone = enteredZone.GetComponent<IZone>();
+        if(zone != null)  // lw la2a item y2dr yt3mlha pickup
+        {
+            zone.ZoneEffect(false, gameObject);
+            // false indicates that this is the enemy, not the player
+            // in that case, we send the gameObject to know exactly which enemy it is
+        }
+    }
 }
