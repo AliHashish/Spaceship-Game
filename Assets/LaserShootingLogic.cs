@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LaserShootingLogic : MonoBehaviour, IGunType
 {
+    [SerializeField] private LayerMask layerMask;
+    
     // public Transform firePoint;
     public LineRenderer laserLine;
     public GameObject onImpactEffect;
@@ -31,7 +33,8 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
         laserLine.startWidth = laserWidth;
         laserLine.endWidth = laserWidth;
         // waitingTime = 1f;
-        RaycastHit2D hitObjectInfo = Physics2D.Raycast(this.GetComponent<Transform>().position, this.GetComponent<Transform>().right);
+        Debug.Log(layerMask.ToString());
+        RaycastHit2D hitObjectInfo = Physics2D.Raycast(this.GetComponent<Transform>().position, this.GetComponent<Transform>().right, layerMask);
         // 8albn m3naha lw el laser kamel fl etgah bta3o, hye5bat fy eih aw kda
         if (hitObjectInfo)          // 5abat 7aga
         {

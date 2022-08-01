@@ -400,6 +400,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00001754469ea534fa43dae2bff36a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 887
   laserLine: {fileID: 101511124}
   onImpactEffect: {fileID: 100002, guid: 2f6b8f55111872a4f98f7c00370200f6, type: 3}
   laserWidth: 0.06
@@ -632,7 +635,7 @@ GameObject:
   - component: {fileID: 174377269}
   - component: {fileID: 174377272}
   - component: {fileID: 174377271}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: AttackRate_Temp
   m_TagString: TempAttackRate
   m_Icon: {fileID: 0}
@@ -2850,7 +2853,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2914522, y: 1}
+    m_SensorSize: {x: 2.3645058, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2887,7 +2890,7 @@ GameObject:
   - component: {fileID: 780463440}
   - component: {fileID: 780463443}
   - component: {fileID: 780463442}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3013,7 +3016,7 @@ GameObject:
   - component: {fileID: 786839526}
   - component: {fileID: 786839529}
   - component: {fileID: 786839528}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shield_Temp
   m_TagString: TempShield
   m_Icon: {fileID: 0}
@@ -4808,7 +4811,7 @@ GameObject:
   - component: {fileID: 1164316326}
   - component: {fileID: 1164316328}
   - component: {fileID: 1164316329}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BulletSpeed_LaserMaxRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4933,8 +4936,9 @@ GameObject:
   - component: {fileID: 1187260941}
   - component: {fileID: 1187260940}
   - component: {fileID: 1187260942}
-  m_Layer: 0
-  m_Name: LaserGun
+  - component: {fileID: 1187260943}
+  m_Layer: 11
+  m_Name: ParticleGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5017,7 +5021,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.40712678}
@@ -5033,6 +5037,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.072874, y: 1.9869549}
   m_EdgeRadius: 0
+--- !u!114 &1187260943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187260939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c50cc05f5575944b9635fc1540f2544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunVars: {fileID: 346797305}
+  playerVars: {fileID: 803538167}
+  particleShot: {fileID: 428496383}
 --- !u!1 &1195711715
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,7 +5525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1427282400}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PickUpItemInterface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6649,8 +6668,9 @@ GameObject:
   - component: {fileID: 1856341301}
   - component: {fileID: 1856341300}
   - component: {fileID: 1856341302}
-  m_Layer: 0
-  m_Name: ParticleGun
+  - component: {fileID: 1856341303}
+  m_Layer: 11
+  m_Name: LaserGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6733,7 +6753,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6749,6 +6769,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9790952, y: 1.1756611}
   m_EdgeRadius: 0
+--- !u!114 &1856341303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856341299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d223c177ffa56fe4383c90d92f5d93b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunVars: {fileID: 346797305}
+  playerVars: {fileID: 803538167}
+  laserShot: {fileID: 101511121}
 --- !u!1 &1887350247
 GameObject:
   m_ObjectHideFlags: 0
@@ -8431,7 +8466,7 @@ GameObject:
   - component: {fileID: 2139287036}
   - component: {fileID: 2139287038}
   - component: {fileID: 2139287039}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Heal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8556,7 +8591,7 @@ GameObject:
   - component: {fileID: 2143809843}
   - component: {fileID: 2143809845}
   - component: {fileID: 2143809846}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BulletNum_LaserWidth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
