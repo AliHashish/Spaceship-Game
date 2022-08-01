@@ -17,6 +17,7 @@ public class PlayerEnterZone : MonoBehaviour
         
     }
 
+    // e3ml function zy dyh fl enemy bs, kda el enemy can both heal and get damaged by zones
     private void OnTriggerStay2D(Collider2D enteredZone)
     {
         // i++;

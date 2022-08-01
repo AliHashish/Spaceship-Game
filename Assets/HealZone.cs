@@ -20,6 +20,7 @@ public class HealZone : MonoBehaviour, IZone
 
     public void ZoneEffect()
     {
+        // h7tag azwd hena check 3l enemy lw kda
         if (playerVars.health < playerVars.maxHealth)     // mtzawedsh 3n el max
         {
             playerVars.health += playerVars.health * 0.00015f;   // kol sanya by2alel 7aba, bs el value btzeed kol shwya
