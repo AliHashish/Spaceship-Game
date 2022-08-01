@@ -23,6 +23,7 @@ public class GunShoot : MonoBehaviour
         var obj = shotType.GetComponent<IGunType>();
         if (obj != null)
         {
+            // Debug.Log("byedrab");
             obj.Shoot();
         }
         // Debug.Log(shotType.GetComponent<LineRenderer>());

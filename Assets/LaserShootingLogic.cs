@@ -38,12 +38,13 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
         // 8albn m3naha lw el laser kamel fl etgah bta3o, hye5bat fy eih aw kda
         if (hitObjectInfo)          // 5abat 7aga
         {
+            // Debug.Log(hitObjectInfo.EnemyInfo.health);
             Debug.Log(hitObjectInfo.transform.name);
-            Debug.Log(hitObjectInfo.transform.position);
-            Debug.Log(this.GetComponent<Transform>().position);
+            // Debug.Log(hitObjectInfo.transform.position);
+            // Debug.Log(this.GetComponent<Transform>().position);
             
             distance = Distance(hitObjectInfo);     
-            Debug.Log(Distance(hitObjectInfo));
+            // Debug.Log(Distance(hitObjectInfo));
 
             // Debug.Log(firePoint.position);
             // h7sb b2a el distance ma bein el firePoint.position wl object elly et5abat
@@ -57,6 +58,10 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
                 // hena e3ml el particle effect wl damage
                 GameObject effect = Instantiate(onImpactEffect, hitObjectInfo.point, Quaternion.identity);
                 Destroy(effect, 0.41f);    // bn3ml destroy bs b3deeha b 0.41 seconds
+                // if (hitObjectInfo.CompareTag("Enemy"))   // 5abat enemy, fa e3mlo damage
+                // {
+                //     hitObjectInfo.GetComponent<EnemyInfo>().health -= damage;
+                // }
             }
             else
             {

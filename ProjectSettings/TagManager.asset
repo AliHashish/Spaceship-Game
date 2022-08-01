@@ -8,6 +8,7 @@ TagManager:
   - FriendlyFire
   - TempShield
   - TempAttackRate
+  - Enemy
   layers:
   - Default
   - TransparentFX
