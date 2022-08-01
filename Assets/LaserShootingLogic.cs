@@ -33,13 +33,14 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
         laserLine.startWidth = laserWidth;
         laserLine.endWidth = laserWidth;
         // waitingTime = 1f;
-        Debug.Log(layerMask.ToString());
+        // Debug.Log(layerMask.ToString());
         RaycastHit2D hitObjectInfo = Physics2D.Raycast(this.GetComponent<Transform>().position, this.GetComponent<Transform>().right, layerMask);
         // 8albn m3naha lw el laser kamel fl etgah bta3o, hye5bat fy eih aw kda
         if (hitObjectInfo)          // 5abat 7aga
         {
             // Debug.Log(hitObjectInfo.EnemyInfo.health);
-            Debug.Log(hitObjectInfo.transform.name);
+            // Debug.Log(hitObjectInfo.transform.GetComponent<EnemyInfo>().health);
+            // Debug.Log(hitObjectInfo.transform.name);
             // Debug.Log(hitObjectInfo.transform.position);
             // Debug.Log(this.GetComponent<Transform>().position);
             
@@ -58,10 +59,11 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
                 // hena e3ml el particle effect wl damage
                 GameObject effect = Instantiate(onImpactEffect, hitObjectInfo.point, Quaternion.identity);
                 Destroy(effect, 0.41f);    // bn3ml destroy bs b3deeha b 0.41 seconds
-                // if (hitObjectInfo.CompareTag("Enemy"))   // 5abat enemy, fa e3mlo damage
-                // {
-                //     hitObjectInfo.GetComponent<EnemyInfo>().health -= damage;
-                // }
+                if (hitObjectInfo.transform.CompareTag("Enemy"))   // 5abat enemy, fa e3mlo damage
+                {
+                    Debug.Log("bat7ere2 ya naaaaas");
+                    hitObjectInfo.transform.GetComponent<EnemyInfo>().health -= damage;
+                }
             }
             else
             {
