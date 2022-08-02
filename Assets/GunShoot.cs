@@ -29,9 +29,11 @@ public class GunShoot : MonoBehaviour
         // Debug.Log(shotType.GetComponent<LineRenderer>());
         if (shotType.GetComponent<LineRenderer>() != null)
         {
+            // garab ta5od hena bool, w t3ml el check ta7t
+            // aw e3ml ta7t !GetButton
             yield return new WaitForSeconds(0.1f);      // waits for a while before continuing
                                                         // 3lshan nel7a2 nshoof el laser
-            if(Input.GetButtonUp("Fire1"))              // el laser hyefdal visible, le7ad ma ysheel 2eedo;
+            if(!Input.GetButton("Fire1"))              // el laser hyefdal visible, le7ad ma ysheel 2eedo;
             {
                 // Debug.Log("Noice");
             shotType.GetComponent<LineRenderer>().enabled = false;       // kda el laser invisible

@@ -33,6 +33,11 @@ public class PlayerPickUp : MonoBehaviour
 
         }
         
+        // kan momkn n3ml hena wait wa2t mo3yn, b3dein item.ReversePickUpEffect();
+        // dyh htb2a zy item.PickUp(); bs htb2a fadya fl 7agat el permanent, w htb2a bt-reverse
+        // el effect fl 7agat el temporary
+
+
         // 8albn el coroutine hyet7at hena
         if (pickedUpItem.gameObject.CompareTag("TempShield"))
         {

@@ -528,7 +528,7 @@ MonoBehaviour:
   onImpactEffect: {fileID: 100002, guid: 2f6b8f55111872a4f98f7c00370200f6, type: 3}
   laserWidth: 0.06
   laserMaxRange: 2
-  damage: 0.1
+  damage: 0.2
 --- !u!120 &101511124
 LineRenderer:
   m_ObjectHideFlags: 0
