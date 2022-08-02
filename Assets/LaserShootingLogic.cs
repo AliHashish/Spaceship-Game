@@ -34,7 +34,7 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
         laserLine.endWidth = laserWidth;
         // waitingTime = 1f;
         // Debug.Log(layerMask.ToString());
-        RaycastHit2D hitObjectInfo = Physics2D.Raycast(this.GetComponent<Transform>().position, this.GetComponent<Transform>().right, layerMask);
+        RaycastHit2D hitObjectInfo = Physics2D.Raycast(this.GetComponent<Transform>().position, this.GetComponent<Transform>().right, Mathf.Infinity, layerMask);
         // 8albn m3naha lw el laser kamel fl etgah bta3o, hye5bat fy eih aw kda
         if (hitObjectInfo)          // 5abat 7aga
         {
