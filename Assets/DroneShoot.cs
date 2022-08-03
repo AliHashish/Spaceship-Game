@@ -7,14 +7,17 @@ public class DroneShoot : MonoBehaviour
 {
     [Header("Custom Event")]            // 3lshan ast3ml el events
     public UnityEvent customEvent;
+    public GameObject player;
 
     [SerializeField] private LayerMask layerMask;
 
     public float attackRate = 1.25f;       // y2dr y3ml kam attack fl sanya
+    public float attackRange = 1.3f;        // y2dr ydrb mn 3la bo3d ad eih
     float nextAttackTime = 0f;
 
     public float movingRadius = 1f;        // masmo7lo yemshy one block at a time
     public float movingSpeed = 1f;         // el sor3a el hyemshy byha
+    public Rigidbody2D rb;              // byshawer 3l rigidbody bta3 el enemy
 
     private Vector2 positionBeforeMoving;
     private Vector2 movingTo;
@@ -29,13 +32,20 @@ public class DroneShoot : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        // if (Time.time >= nextAttackTime)
-        // {
-        //     customEvent.Invoke();       // To invoke the event(s), dh el hy5leeh y-attack
-            // nextAttackTime = Time.time + 1f / attackRate;
-        //     // transform.eulerAngles = Vector3.forward * angle;
-            MoveRandomly();
-        // }
+        MoveRandomly();
+        if (Vector3.Distance(player.transform.position, transform.position) < attackRange)
+        {
+            Vector2 lookDir = (Vector2) player.transform.position - rb.position;       // el far2 ma bein el mouse wl player howa el vector mn el player lel mouse
+            float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg + 180f;;                                   
+            rb.rotation = angle;
+
+            if (Time.time >= nextAttackTime)
+            {
+                customEvent.Invoke();       // To invoke the event(s), dh el hy5leeh y-attack
+                nextAttackTime = Time.time + 1f / attackRate;
+                // transform.eulerAngles = Vector3.forward * angle;
+            }
+        }
     }
 
     Vector2 GenerateRandomPoint()
