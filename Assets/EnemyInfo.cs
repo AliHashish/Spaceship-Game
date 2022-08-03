@@ -30,7 +30,7 @@ public class EnemyInfo : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D bullet) 
     {
-        Debug.Log("particle darabetny");
+        // Debug.Log("particle darabetny");
         if (bullet.gameObject.CompareTag("FriendlyFire"))
         {
             health -= playerVars.damage;

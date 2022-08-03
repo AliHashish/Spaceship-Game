@@ -35,7 +35,7 @@ public class DroneShoot : MonoBehaviour
         MoveRandomly();
         if (Vector3.Distance(player.transform.position, transform.position) < attackRange)
         {
-            Vector2 lookDir = (Vector2) player.transform.position - rb.position;       // el far2 ma bein el mouse wl player howa el vector mn el player lel mouse
+            Vector2 lookDir = (Vector2) player.transform.position - rb.position;       // el far2 ma bein el enemy wl player howa el vector mn el player lel enemy
             float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg + 180f;;                                   
             rb.rotation = angle;
 
