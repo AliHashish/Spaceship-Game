@@ -78,12 +78,12 @@ public class DroneShoot : MonoBehaviour
             // yb2a mte2darsh temshy fl taree2 dh, e7sb taree2 mo5tlf
             positionBeforeMoving = gameObject.transform.position;   // b-save el makan el gdeed abl el 7araka
             movingTo = GenerateRandomPoint();
-            Debug.Log($"5abat fy {hitObjectInfo.transform.name}, h8yr el destination to {(Vector2) gameObject.transform.position + movingTo}");
+            // Debug.Log($"5abat fy {hitObjectInfo.transform.name}, h8yr el destination to {(Vector2) gameObject.transform.position + movingTo}");
         }
         else
         {
             // ebtedy emsheelo madam eshta
-            Debug.Log("El mrady h3rf a3ady eshta");
+            // Debug.Log("El mrady h3rf a3ady eshta");
             transform.position = Vector2.MoveTowards(transform.position, (Vector2) transform.position + movingTo, movingSpeed * Time.fixedDeltaTime);
         }
 
