@@ -26,6 +26,7 @@ public class CheckPoint : MonoBehaviour
        {
             firstTime = false;
             playerVars.respawnPoint = respawnPoint;
+            // momkn ysha8al sot hena
        }
     }
 }
