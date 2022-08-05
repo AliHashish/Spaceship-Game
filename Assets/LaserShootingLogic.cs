@@ -119,6 +119,9 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
     {
         // This line might seem scary, but I promise, it simply calculates the distance between 2 points :D
         return Mathf.Sqrt((hitObjectInfo.transform.position.x - this.GetComponent<Transform>().position.x)*(hitObjectInfo.transform.position.x - this.GetComponent<Transform>().position.x) + (hitObjectInfo.transform.position.y - this.GetComponent<Transform>().position.y)*(hitObjectInfo.transform.position.y - this.GetComponent<Transform>().position.y));
+        // Debug.Log($"bta3ty: {Mathf.Sqrt((hitObjectInfo.transform.position.x - this.GetComponent<Transform>().position.x)*(hitObjectInfo.transform.position.x - this.GetComponent<Transform>().position.x) + (hitObjectInfo.transform.position.y - this.GetComponent<Transform>().position.y)*(hitObjectInfo.transform.position.y - this.GetComponent<Transform>().position.y))}");
+        // Debug.Log($"bta3thom: {Vector3.Distance(hitObjectInfo.transform.position, this.GetComponent<Transform>().position)}");
+        // return Vector3.Distance(hitObjectInfo.transform.position, this.GetComponent<Transform>().position);
     }
     // IEnumerator la7za()
     // {
