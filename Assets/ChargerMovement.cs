@@ -152,11 +152,12 @@ public class ChargerMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D bullet) 
     {
         // Debug.Log("particle darabetny");
-        if (bullet.gameObject.CompareTag("FriendlyFire"))
+        if (bullet.gameObject.CompareTag("FriendlyFire"))   // el player byedrabny b particles
         {
+            // m7tag a-check hena lw el player masek laser msh particle gun
             health -= playerVars.damage;
         }
-        else if (bullet.gameObject.CompareTag("Player"))
+        else if (bullet.gameObject.CompareTag("Player"))    // ana 5abat fl player
         {
             bullet.transform.GetComponent<PlayerPickUp>().health -= damage;
         }

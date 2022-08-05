@@ -62,7 +62,18 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
                 if (hitObjectInfo.transform.CompareTag("Enemy"))   // 5abat enemy, fa e3mlo damage
                 {
                     // Debug.Log("bat7ere2 ya naaaaas");
-                    hitObjectInfo.transform.GetComponent<EnemyInfo>().health -= damage;
+                    if(hitObjectInfo.transform.GetComponent<ChargerMovement>())
+                    {
+                        hitObjectInfo.transform.GetComponent<ChargerMovement>().health -= damage;
+                    }
+                    else
+                    {
+                        hitObjectInfo.transform.GetComponent<EnemyInfo>().health -= damage;
+                    }
+                }
+                else if (hitObjectInfo.transform.CompareTag("Destructables"))
+                {
+                    hitObjectInfo.transform.GetComponent<Destructable>().hitPoints -= 1f/50f;
                 }
             }
             else

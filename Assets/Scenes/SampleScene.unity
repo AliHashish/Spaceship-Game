@@ -7203,7 +7203,7 @@ GameObject:
   - component: {fileID: 1398428000}
   m_Layer: 15
   m_Name: DestructableWall
-  m_TagString: Untagged
+  m_TagString: Destructables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9176,7 +9176,7 @@ MonoBehaviour:
   player: {fileID: 803538160}
   layerMask:
     serializedVersion: 2
-    m_Bits: 17015
+    m_Bits: 82551
   attackRate: 1.25
   attackRange: 2
   movingRadius: 1
@@ -11037,7 +11037,7 @@ GameObject:
   - component: {fileID: 2113577925}
   m_Layer: 15
   m_Name: TNT
-  m_TagString: Untagged
+  m_TagString: Destructables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
