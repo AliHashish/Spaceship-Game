@@ -157,7 +157,7 @@ public class ChargerMovement : MonoBehaviour
             // m7tag a-check hena lw el player masek laser msh particle gun
             health -= playerVars.damage;
         }
-        else if (bullet.gameObject.CompareTag("Player"))    // ana 5abat fl player
+        else if (bullet.gameObject.CompareTag("Player") && !(bullet.transform.GetComponent<PlayerPickUp>().shield))    // ana 5abat fl player
         {
             bullet.transform.GetComponent<PlayerPickUp>().health -= damage;
         }

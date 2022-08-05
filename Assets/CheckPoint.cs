@@ -5,13 +5,14 @@ using UnityEngine;
 public class CheckPoint : MonoBehaviour
 {
     private bool firstTime = true;
-    public Vector3 respawnPoint;
+    // public Vector3 respawnPoint;
+    private Vector3 respawnPoint;
 
     public DeathRespawn playerVars;         // To access some variables
     // Start is called before the first frame update
     void Start()
     {
-        
+        respawnPoint = gameObject.transform.position;
     }
 
     // Update is called once per frame

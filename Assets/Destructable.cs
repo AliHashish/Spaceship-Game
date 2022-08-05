@@ -55,7 +55,7 @@ public class Destructable : MonoBehaviour
         foreach(Collider2D obj in objects)
         {
             // Debug.Log($"Object: {obj.transform.name}");
-            if(obj.transform.GetComponent<PlayerPickUp>())
+            if(obj.transform.GetComponent<PlayerPickUp>() && !(obj.transform.GetComponent<PlayerPickUp>().shield))
             {
                 // Debug.Log("Player");
                 obj.transform.GetComponent<PlayerPickUp>().health -= explosionDamage;
