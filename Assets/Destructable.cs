@@ -39,6 +39,7 @@ public class Destructable : MonoBehaviour
     {
         if (other.gameObject.CompareTag("FriendlyFire"))
         {
+            Debug.Log("Noice");
             hitPoints--;
         }
     }
