@@ -75,6 +75,7 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
                 {
                     hitObjectInfo.transform.GetComponent<Destructable>().hitPoints -= 1f/50f;
                 }
+                // lw hzwd 7aga lel boss htb2a hena brdo
             }
             else
             {
