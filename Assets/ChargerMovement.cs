@@ -33,6 +33,7 @@ public class ChargerMovement : MonoBehaviour
     void Start()
     {
         state = ChargerState.Idle;
+        // Debug.Log($"State: {state}, int {(int)(state)}");
         rend = GetComponent<SpriteRenderer> ();
         C = rend.material.color;
         C.a = 0.5f;
