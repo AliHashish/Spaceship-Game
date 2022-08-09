@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerPickUp : MonoBehaviour
 {
+    public bool key = false;        // Key to free the 2nd player
     public bool shield = false;     // initially, player has no shield
     public float health = 150f;     // initially, player health = 150
     public float maxHealth = 150f;     // initially, player max health = 150
