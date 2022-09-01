@@ -117,7 +117,7 @@ public class ChargerMovement : MonoBehaviour
 
             if (Time.time >= nextAttackTime)
             {
-                Debug.Log("Charging dlw2ty");
+                // Debug.Log("Charging dlw2ty");
                 // charge 3l player
                 gameObject.GetComponent<Rigidbody2D>().AddForce(this.transform.up * -chargingSpeed, ForceMode2D.Impulse);
                 
@@ -145,7 +145,7 @@ public class ChargerMovement : MonoBehaviour
         C.g = 1f;
         C.b = 1f;
         rend.material.color = C;
-        Debug.Log("asly");
+        // Debug.Log("asly");
         yield return new WaitForSeconds(seconds);
     }
 

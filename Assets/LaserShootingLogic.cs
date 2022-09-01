@@ -79,7 +79,7 @@ public class LaserShootingLogic : MonoBehaviour, IGunType
             }
             else
             {
-                Debug.Log("3ada el max");
+                // Debug.Log("3ada el max");
                 laserLine.SetPosition(1, this.GetComponent<Transform>().position + this.GetComponent<Transform>().right * laserMaxRange);          // b5ly el ending point hya el max range
                 // Instantiate(onImpactEffect, this.GetComponent<Transform>().position + this.GetComponent<Transform>().right * laserMaxRange, Quaternion.identity);
             }

@@ -50,7 +50,7 @@ public class Destructable : MonoBehaviour
             GameObject effect = Instantiate(explosionEffect, transform.position, Quaternion.identity);
             Destroy(effect, 0.41f);    // bn3ml destroy bs b3deeha b 0.41 seconds
         }
-        Debug.Log("exploded");
+        // Debug.Log("exploded");
         Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, explosionRadius, layerMask);
         foreach(Collider2D obj in objects)
         {

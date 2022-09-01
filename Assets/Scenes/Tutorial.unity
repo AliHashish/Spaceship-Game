@@ -10615,7 +10615,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1117706, y: 1}
+    m_SensorSize: {x: 2.2423344, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11297,6 +11297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66fef75b2e4b50b4e80d0e750b511e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  key: 0
   shield: 0
   health: 150
   maxHealth: 150
@@ -26142,7 +26143,7 @@ GameObject:
   - component: {fileID: 1958363609}
   - component: {fileID: 1958363608}
   m_Layer: 17
-  m_Name: WinningPortal (1)
+  m_Name: WinningPortal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

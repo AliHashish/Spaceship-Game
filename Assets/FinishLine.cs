@@ -23,7 +23,7 @@ public class FinishLine : MonoBehaviour
             // ysha8al o8nya
 
             // yen2el lel level el b3do
-            Debug.Log("HORAY");
+            // Debug.Log("HORAY");
             // StartCoroutine(TimeDelay());
         }
     }

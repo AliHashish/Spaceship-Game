@@ -26,7 +26,7 @@ public class HealZone : MonoBehaviour, IZone
         {
             if (playerVars.health < playerVars.maxHealth)     // mtzawedsh 3n el max
             {
-                playerVars.health += playerVars.health * 0.00015f;   // kol sanya by2alel 7aba, bs el value btzeed kol shwya
+                playerVars.health += playerVars.maxHealth * 0.00015f;   // kol sanya byzawed 7aba, bs el value btzeed kol shwya
             }
             if (playerVars.health > playerVars.maxHealth)
             {
@@ -39,7 +39,7 @@ public class HealZone : MonoBehaviour, IZone
             EnemyInfo enemyVars = enemy.GetComponent<EnemyInfo>();
             if (enemyVars.health < enemyVars.maxHealth)     // mtzawedsh 3n el max
             {
-                enemyVars.health += enemyVars.health * 0.00015f;   // kol sanya by2alel 7aba, bs el value btzeed kol shwya
+                enemyVars.health += enemyVars.health * 0.00015f;   // kol sanya byzawed 7aba, bs el value btzeed kol shwya
             }
             if (enemyVars.health > enemyVars.maxHealth)
             {

@@ -26,7 +26,7 @@ public class PlayerPickUp : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D pickedUpItem)
     {
-        Debug.Log("5abat fya");
+        // Debug.Log("5abat fya");
         var item = pickedUpItem.GetComponent<IPickUpItem>();
         if(item != null)  // lw la2a item y2dr yt3mlha pickup
         {
