@@ -8,14 +8,14 @@ public class ParticleShootingLogic : MonoBehaviour, IGunType
     public GameObject bulletPrefab;
 
     public float bulletForce = 1.25f;         // sor3et el bullet
-    // 1.25 for enemies, 2 for player
-    
+                                              // 1.25 for enemies, 2 for player
+
     public float damage = 5f;                 // dyh lel player bs
     // bta3t el enemy m7toota gowa el EnemyParticleShot.cs (gowa el particle nafsaha)
 
 
     public int numBullets = 1;                // htedrab kam bullet fl mara
-    Vector3 disposition = new Vector3(0f,0.3f,0f);
+    Vector3 disposition = new Vector3(0.3f, 0, 0);
     // momkn a3mlha for loop ez gowa el Shoot(), kol mara y-spawn wa7da fy makan shifted 3n el ableeha b value mo3yna / 3adadhom
     // kda kol ma 3adadhom yzeed, el value dyh ht2el, l2n el denominator b2a akbar
     // kinda like, float value = 18/NumBullets mthln;
@@ -33,13 +33,13 @@ public class ParticleShootingLogic : MonoBehaviour, IGunType
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Shoot()
@@ -54,13 +54,13 @@ public class ParticleShootingLogic : MonoBehaviour, IGunType
             GameObject bullet = Instantiate(bulletPrefab, this.GetComponent<Transform>().position + (sign * i * disposition / numBullets), this.GetComponent<Transform>().rotation);
             // bn3ml object mn el bulletPrefab el 7atenaha, fl position dh, bl rotation dyh
             // w bn5azeno fy variable
-            
+
             // bs e7na 3ayzeen n-access el rigidbody bta3 el bullet, fa hnst3ml getcomponent
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();    // bn5azen el rigidbody
             // hndeelo force b2a
             rb.AddForce(this.GetComponent<Transform>().right * bulletForce, ForceMode2D.Impulse);
             // ba7aded el direction w no3 el force
         }
-            
+
     }
 }
