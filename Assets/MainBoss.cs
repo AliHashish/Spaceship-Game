@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;           // 3lshan ast3ml el events
+using UnityEngine.UI;
 
 public class MainBoss : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class MainBoss : MonoBehaviour
 
     public float health = 5000f;     // initially, health = 5000
     public float maxHealth = 5000f;     // initially, max health = 5000
+    public Slider slider;
 
     public float attackRate = 2f;       // y2dr y3ml kam attack fl sanya
     float nextAttackTime = 0f;
@@ -42,6 +44,7 @@ public class MainBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        slider.value = health / maxHealth;
         if (health <= 0)
         {
             Destroy(gameObject);
