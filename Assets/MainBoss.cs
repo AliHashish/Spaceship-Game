@@ -50,6 +50,10 @@ public class MainBoss : MonoBehaviour
             Destroy(gameObject);
             // w en2elo 3l dor elly b3do
         }
+        else if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
     }
 
     void FixedUpdate()
