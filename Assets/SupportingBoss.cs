@@ -58,7 +58,7 @@ public class SupportingBoss : MonoBehaviour
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg + 90f; ;
         rb.rotation = angle;
 
-        boss.GetComponent<MainBoss>().health += boss.GetComponent<MainBoss>().maxHealth * 0.00006f;
+        boss.GetComponent<MainBoss>().health += boss.GetComponent<MainBoss>().maxHealth * 0.00025f;
         if (Time.time >= nextShieldTime)
         {
             // customEvent.Invoke();       // To invoke the event(s), dh el hy5leeh y-attack

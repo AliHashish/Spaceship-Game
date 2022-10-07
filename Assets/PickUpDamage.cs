@@ -9,13 +9,13 @@ public class PickUpDamage : MonoBehaviour, IPickUpItem
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void PickUp()
@@ -23,5 +23,7 @@ public class PickUpDamage : MonoBehaviour, IPickUpItem
         Destroy(gameObject);
         laserVars.damage *= 1.1f;   // adds 10% of current damage
         particleVars.damage *= 1.1f;   // adds 10% of current damage
+        VariableStorage.playerLaserDamage = laserVars.damage;
+        VariableStorage.playerParticleDamage = particleVars.damage;
     }
 }

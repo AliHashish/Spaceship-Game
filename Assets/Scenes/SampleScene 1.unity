@@ -416,7 +416,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78e436a869e7a84cae0ea4d1c8b3633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {x: -6, y: 0, z: 0}
   playerVars: {fileID: 803538170}
 --- !u!1 &70489740
 GameObject:
@@ -4000,7 +3999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78e436a869e7a84cae0ea4d1c8b3633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {x: 0, y: -5, z: 0}
   playerVars: {fileID: 803538170}
 --- !u!1 &771447374
 GameObject:
@@ -4048,7 +4046,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.0445104, y: 1}
+    m_SensorSize: {x: 1.8226554, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4645,6 +4643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66fef75b2e4b50b4e80d0e750b511e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  key: 0
   shield: 0
   health: 150
   maxHealth: 150
@@ -8245,7 +8244,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78e436a869e7a84cae0ea4d1c8b3633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {x: -1, y: 4, z: 0}
   playerVars: {fileID: 803538170}
 --- !u!1 &1612806071
 GameObject:
@@ -9199,7 +9197,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856341299}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.37470055, y: -9.668341, z: 0.006381984}
+  m_LocalPosition: {x: -0.74, y: -14.09, z: 0.006381984}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

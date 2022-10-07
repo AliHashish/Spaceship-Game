@@ -15,25 +15,26 @@ public class PlayerPickUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<SpriteRenderer> ();
+        key = VariableStorage.playerKeyFound;
+        rend = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D pickedUpItem)
     {
         // Debug.Log("5abat fya");
         var item = pickedUpItem.GetComponent<IPickUpItem>();
-        if(item != null)  // lw la2a item y2dr yt3mlha pickup
+        if (item != null)  // lw la2a item y2dr yt3mlha pickup
         {
             item.PickUp();
 
         }
-        
+
         // kan momkn n3ml hena wait wa2t mo3yn, b3dein item.ReversePickUpEffect();
         // dyh htb2a zy item.PickUp(); bs htb2a fadya fl 7agat el permanent, w htb2a bt-reverse
         // el effect fl 7agat el temporary

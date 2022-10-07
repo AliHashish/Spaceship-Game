@@ -33,6 +33,17 @@ public class ParticleShootingLogic : MonoBehaviour, IGunType
     // Start is called before the first frame update
     void Start()
     {
+        // Debug.Log(gameObject.tag);
+        if (gameObject.CompareTag("FriendlyFire"))
+        {
+            if (gameObject.name == "Particle")
+            {
+                bulletForce = VariableStorage.playerParticleBulletForce;
+                damage = VariableStorage.playerParticleDamage;
+                numBullets = VariableStorage.playerParticleBulletsNumber;
+            }
+            // Debug.Log("NOICE");
+        }
 
     }
 

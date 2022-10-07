@@ -6,23 +6,23 @@ public class PickUpBulletNumLaserWidth : MonoBehaviour, IPickUpItem
 {
     public ParticleShootingLogic particleVars;         // To access some variables
     public LaserShootingLogic laserVars;               // To access some variables
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    
+
     public void PickUp()
     {
         Destroy(gameObject);
-        laserVars.laserWidth *= 1.1f;   // adds 10% of current damage
+        laserVars.laserWidth *= 1.1f;   // adds 10% of current width
         particleVars.numBullets++;      // adds 1 bullet
         if (particleVars.numBullets > 7)
         {
@@ -32,5 +32,7 @@ public class PickUpBulletNumLaserWidth : MonoBehaviour, IPickUpItem
         {
             laserVars.laserWidth = 0.2f;
         }
+        VariableStorage.playerParticleBulletsNumber = particleVars.numBullets;
+        VariableStorage.playerLaserWidth = laserVars.laserWidth;
     }
 }

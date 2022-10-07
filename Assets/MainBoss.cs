@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;           // 3lshan ast3ml el events
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainBoss : MonoBehaviour
 {
@@ -47,8 +48,10 @@ public class MainBoss : MonoBehaviour
         slider.value = health / maxHealth;
         if (health <= 0)
         {
-            Destroy(gameObject);
             // w en2elo 3l dor elly b3do
+            SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);       // gets the next level
+            // StartCoroutine(TimeDelay());
+            Destroy(gameObject);
         }
         else if (health > maxHealth)
         {
@@ -98,4 +101,12 @@ public class MainBoss : MonoBehaviour
         }
 
     }
+
+    // IEnumerator TimeDelay()
+    // {
+    //     yield return new WaitForSeconds(0.85f);      // waits for 1.5 seconds abl ma yen2el el level
+    //                                                  // dh 3lshan 5ater nel7a2 nesma3 el o8nya
+    //     SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings);       // gets the next level
+    //     // bs msh htb2a %3 b2a, h8ayar el rakam 3la asas 3adad el levels
+    // }
 }

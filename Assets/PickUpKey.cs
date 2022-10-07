@@ -15,12 +15,13 @@ public class PickUpKey : MonoBehaviour, IPickUpItem
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void PickUp()
     {
         Destroy(gameObject);
         playerVars.key = true;
+        VariableStorage.playerKeyFound = true;
     }
 }
