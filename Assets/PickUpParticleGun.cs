@@ -7,22 +7,26 @@ public class PickUpParticleGun : MonoBehaviour, IPickUpItem
     public GunShoot gunVars;         // To access some variables
     public PlayerShoot playerVars;               // To access some variables
     public GameObject particleShot;             // Storing the particle shot prefab
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void PickUp()
     {
         Destroy(gameObject);
+        if (gunVars.shotType.GetComponent<LineRenderer>() != null)
+        {
+            gunVars.shotType.GetComponent<LineRenderer>().enabled = false;       // kda el laser invisible
+        }
         gunVars.shotType = particleShot;        // 8ayar el prefab
         if (playerVars.attackRate > 40)
         {

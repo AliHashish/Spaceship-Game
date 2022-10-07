@@ -5,16 +5,17 @@ using UnityEngine;
 public class GunShoot : MonoBehaviour
 {
     public GameObject shotType;
+    public GameObject edeehaLaser;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     IEnumerator GeneralShoot()
@@ -29,15 +30,21 @@ public class GunShoot : MonoBehaviour
         // Debug.Log(shotType.GetComponent<LineRenderer>());
         if (shotType.GetComponent<LineRenderer>() != null)
         {
+            edeehaLaser.SetActive(true);
             // garab ta5od hena bool, w t3ml el check ta7t
             // aw e3ml ta7t !GetButton
             yield return new WaitForSeconds(0.1f);      // waits for a while before continuing
                                                         // 3lshan nel7a2 nshoof el laser
-            if(!Input.GetButton("Fire1"))              // el laser hyefdal visible, le7ad ma ysheel 2eedo;
+            if (!Input.GetButton("Fire1"))              // el laser hyefdal visible, le7ad ma ysheel 2eedo;
             {
                 // Debug.Log("Noice");
-            shotType.GetComponent<LineRenderer>().enabled = false;       // kda el laser invisible
+                shotType.GetComponent<LineRenderer>().enabled = false;       // kda el laser invisible
+                edeehaLaser.SetActive(false);
             }
+        }
+        else
+        {
+            edeehaLaser.SetActive(false);
         }
     }
 

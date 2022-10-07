@@ -1378,6 +1378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 2063310322}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &86249998
 Transform:
   m_ObjectHideFlags: 0
@@ -2433,6 +2434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 2086761309}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &158042561
 Transform:
   m_ObjectHideFlags: 0
@@ -2651,6 +2653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 660140531}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &167428104
 Transform:
   m_ObjectHideFlags: 0
@@ -3000,6 +3003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 821509194}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &215393578
 Transform:
   m_ObjectHideFlags: 0
@@ -3320,6 +3324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 956954324}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &257292351
 Transform:
   m_ObjectHideFlags: 0
@@ -3630,6 +3635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1384715029}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &267469198
 Transform:
   m_ObjectHideFlags: 0
@@ -4306,6 +4312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 2093778840}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &297626604
 Transform:
   m_ObjectHideFlags: 0
@@ -4988,6 +4995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 894331673}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &332641744
 Transform:
   m_ObjectHideFlags: 0
@@ -5437,6 +5445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 428496383}
+  edeehaLaser: {fileID: 1110787047}
 --- !u!1 &346945522
 GameObject:
   m_ObjectHideFlags: 0
@@ -5515,6 +5524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 200635006}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &354860663
 Transform:
   m_ObjectHideFlags: 0
@@ -5561,6 +5571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 4062004}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &365494619
 Transform:
   m_ObjectHideFlags: 0
@@ -6330,6 +6341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 628842724}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &403786026
 Transform:
   m_ObjectHideFlags: 0
@@ -6581,6 +6593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1988699650}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &414579283
 Transform:
   m_ObjectHideFlags: 0
@@ -6627,6 +6640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1081775621}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &420094109
 Transform:
   m_ObjectHideFlags: 0
@@ -6673,6 +6687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 313916631}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &425618636
 Transform:
   m_ObjectHideFlags: 0
@@ -7389,6 +7404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 777776277}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &446965276
 Transform:
   m_ObjectHideFlags: 0
@@ -7435,6 +7451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1917166366}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &447715263
 Transform:
   m_ObjectHideFlags: 0
@@ -7732,6 +7749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 132713852}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &476821034
 Transform:
   m_ObjectHideFlags: 0
@@ -7778,6 +7796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 386265658}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &479736635
 Transform:
   m_ObjectHideFlags: 0
@@ -10136,6 +10155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 151035231}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &640070050
 Transform:
   m_ObjectHideFlags: 0
@@ -10320,6 +10340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 403383151}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &672453079
 Transform:
   m_ObjectHideFlags: 0
@@ -11002,6 +11023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 800390072}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &735027501
 Transform:
   m_ObjectHideFlags: 0
@@ -11452,6 +11474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1180767593}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &745919942
 Transform:
   m_ObjectHideFlags: 0
@@ -11761,6 +11784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1099977998}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &769488112
 Transform:
   m_ObjectHideFlags: 0
@@ -11823,7 +11847,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.957696, y: 1}
+    m_SensorSize: {x: 1.9558958, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -13681,6 +13705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 2120562664}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &830465986
 Transform:
   m_ObjectHideFlags: 0
@@ -13933,6 +13958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1216825627}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &861869567
 Transform:
   m_ObjectHideFlags: 0
@@ -14243,6 +14269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 751553965}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &880748628
 Transform:
   m_ObjectHideFlags: 0
@@ -15729,6 +15756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 694996931}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &985715316
 Transform:
   m_ObjectHideFlags: 0
@@ -15823,6 +15851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1277844374}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1002125015
 Transform:
   m_ObjectHideFlags: 0
@@ -16274,6 +16303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 346945522}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1065034385
 Transform:
   m_ObjectHideFlags: 0
@@ -16802,6 +16832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 192372133}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1104505774
 Transform:
   m_ObjectHideFlags: 0
@@ -16876,6 +16907,134 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0549526, y: 1.076518}
   m_EdgeRadius: 0
+--- !u!1 &1110787047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1110787049}
+  - component: {fileID: 1110787048}
+  m_Layer: 0
+  m_Name: EdeehaLaser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!82 &1110787048
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110787047}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a0c9a8189eef63446a37bce078ed0de3, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1110787049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110787047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0331388, y: -0.7449962, z: -0.24326769}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1128516429
 GameObject:
   m_ObjectHideFlags: 0
@@ -17033,6 +17192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 2024738847}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1129701189
 Transform:
   m_ObjectHideFlags: 0
@@ -17190,7 +17350,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142971120}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.92, y: 1.147, z: 9.978955}
+  m_LocalPosition: {x: -1.54, y: 1.147, z: 9.978955}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17391,6 +17551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1841524619}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1159953328
 Transform:
   m_ObjectHideFlags: 0
@@ -18192,6 +18353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1722302872}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1251831508
 Transform:
   m_ObjectHideFlags: 0
@@ -18238,6 +18400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 268922390}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1266542029
 Transform:
   m_ObjectHideFlags: 0
@@ -18458,6 +18621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 590721230}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1279479846
 Transform:
   m_ObjectHideFlags: 0
@@ -18652,6 +18816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 998680523}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1296453905
 Transform:
   m_ObjectHideFlags: 0
@@ -18887,6 +19052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 316887633}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1330037382
 Transform:
   m_ObjectHideFlags: 0
@@ -19192,6 +19358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1346172805}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1348187229
 Transform:
   m_ObjectHideFlags: 0
@@ -19804,6 +19971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1988300069}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1407913227
 Transform:
   m_ObjectHideFlags: 0
@@ -19882,6 +20050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 388876266}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1417767022
 Transform:
   m_ObjectHideFlags: 0
@@ -19928,6 +20097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 940673434}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1423969729
 Transform:
   m_ObjectHideFlags: 0
@@ -20778,6 +20948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1399829304}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1456364115
 Transform:
   m_ObjectHideFlags: 0
@@ -20824,6 +20995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1697708053}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1464402658
 Transform:
   m_ObjectHideFlags: 0
@@ -21551,6 +21723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1524254255}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1492981670
 Transform:
   m_ObjectHideFlags: 0
@@ -22000,6 +22173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1469866741}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1511082404
 Transform:
   m_ObjectHideFlags: 0
@@ -22845,6 +23019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 580256588}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1583503328
 Transform:
   m_ObjectHideFlags: 0
@@ -23501,6 +23676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 898051623}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1635068143
 Transform:
   m_ObjectHideFlags: 0
@@ -23673,6 +23849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 216258595}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1650055075
 Transform:
   m_ObjectHideFlags: 0
@@ -23719,6 +23896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 2047708455}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1656369369
 Transform:
   m_ObjectHideFlags: 0
@@ -23823,6 +24001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 760863510}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1669461404
 Transform:
   m_ObjectHideFlags: 0
@@ -24039,6 +24218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 426600556}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1672699822
 Transform:
   m_ObjectHideFlags: 0
@@ -25118,6 +25298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1699691588}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1735445573
 Transform:
   m_ObjectHideFlags: 0
@@ -26688,6 +26869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 217160924}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1847621768
 Transform:
   m_ObjectHideFlags: 0
@@ -28717,6 +28899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1054041610}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1943767542
 Transform:
   m_ObjectHideFlags: 0
@@ -28920,6 +29103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1671431242}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1957576199
 Transform:
   m_ObjectHideFlags: 0
@@ -29784,6 +29968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1196952882}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &1993307617
 Transform:
   m_ObjectHideFlags: 0
@@ -30544,6 +30729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1346411111}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &2062210504
 Transform:
   m_ObjectHideFlags: 0
@@ -31106,6 +31292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 545884977}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &2102772041
 Transform:
   m_ObjectHideFlags: 0
@@ -31348,6 +31535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotType: {fileID: 1787327150}
+  edeehaLaser: {fileID: 0}
 --- !u!4 &2122455404
 Transform:
   m_ObjectHideFlags: 0
